@@ -14,6 +14,8 @@ public class RightWayStopThreadInProd1 implements Runnable {
             try {
                 throwInMethod();
             } catch (InterruptedException e) {
+                //捕获到中断信息，重新设置中断
+                Thread.currentThread().interrupt();
                 e.printStackTrace();
             }
         }
