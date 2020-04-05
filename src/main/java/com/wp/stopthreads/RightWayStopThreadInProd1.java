@@ -2,11 +2,11 @@ package com.wp.stopthreads;
 
 /**
  * @Classname RightWayStopThreadInProd
- * @Description 最佳实践：catch了InterruptedException之后的优先选择：在方法签名中抛出异常
+ * @Description 最佳实践1：catch了InterruptedException之后的优先选择：在方法签名中抛出异常
  * @Date 2020/4/5 16:09
  * @Created by wangpeng116
  */
-public class RightWayStopThreadInProd implements Runnable {
+public class RightWayStopThreadInProd1 implements Runnable {
     @Override
     public void run() {
         while (!Thread.currentThread().isInterrupted()) {
@@ -24,7 +24,7 @@ public class RightWayStopThreadInProd implements Runnable {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Runnable runnable = new RightWayStopThreadInProd();
+        Runnable runnable = new RightWayStopThreadInProd1();
         Thread thread = new Thread(runnable);
         thread.start();
         Thread.sleep(1000);
