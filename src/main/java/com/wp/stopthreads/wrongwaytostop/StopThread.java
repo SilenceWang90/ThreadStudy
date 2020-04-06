@@ -1,4 +1,4 @@
-package com.wp.stopthreads.wrongway;
+package com.wp.stopthreads.wrongwaytostop;
 
 /**
  * @Classname StopThread
