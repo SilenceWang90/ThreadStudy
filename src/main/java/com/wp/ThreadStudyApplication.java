@@ -15,7 +15,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ThreadStudyApplication {
     public static void main(String[] args) {
         log.info("第一次提交");
-        log.info("第二次提交");
         SpringApplication.run(ThreadStudyApplication.class, args);
     }
 }
