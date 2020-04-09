@@ -17,6 +17,7 @@ public class ThreadStudyApplication {
         log.info("第一次提交");
         log.info("第二次提交");
         log.info("第三次提交");
+        log.info("第四次提交");
         SpringApplication.run(ThreadStudyApplication.class, args);
     }
 }
