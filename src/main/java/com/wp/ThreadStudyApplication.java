@@ -1,5 +1,6 @@
 package com.wp;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,8 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Created by wangpeng116
  */
 @SpringBootApplication
+@Slf4j
 public class ThreadStudyApplication {
     public static void main(String[] args) {
+        log.info("第一次提交");
         SpringApplication.run(ThreadStudyApplication.class, args);
     }
 }
