@@ -2,7 +2,7 @@ package com.wp.stopthreads.volatiledemo;
 
 /**
  * @Classname WrongWayVolatile
- * @Description 使用volatile的局限：part1看似可行
+ * @Description 使用volatile的局限：当前逻辑看似可行(因为没有发生“特殊”情况哦)
  * @Date 2020/4/6 14:24
  * @Created by wangpeng116
  */
