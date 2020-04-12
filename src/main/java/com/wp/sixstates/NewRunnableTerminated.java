@@ -3,14 +3,13 @@ package com.wp.sixstates;
 /**
  * @Classname NewRunnableTerminated
  * @Description 展示线程的NEW、RUNNABLE、TERMINATED状态
- *
  * @Date 2020/4/12 10:07
  * @Created by wangpeng116
  */
 public class NewRunnableTerminated implements Runnable {
     @Override
     public void run() {
-        for(int i=0;i<1000;i++){
+        for (int i = 0; i < 1000; i++) {
             System.out.println(i);
         }
     }
