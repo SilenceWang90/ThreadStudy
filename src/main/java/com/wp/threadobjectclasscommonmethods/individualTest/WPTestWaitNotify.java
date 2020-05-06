@@ -1,8 +1,8 @@
-package com.wp.threadobjectclasscommonmethods;
+package com.wp.threadobjectclasscommonmethods.individualTest;
 
 /**
  * @Classname WPTestWaitNotify
- * @Description TODO
+ * @Description 自定义测试WaitNotify的使用
  * @Date 2020/5/6 18:18
  * @Created by wangpeng116
  */

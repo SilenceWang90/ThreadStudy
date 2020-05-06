@@ -1,10 +1,10 @@
-package com.wp.threadobjectclasscommonmethods;
+package com.wp.threadobjectclasscommonmethods.individualTest;
 
 import lombok.Data;
 
 /**
  * @Classname Boy
- * @Description TODO
+ * @Description boy
  * @Date 2020/5/6 18:18
  * @Created by wangpeng116
  */
