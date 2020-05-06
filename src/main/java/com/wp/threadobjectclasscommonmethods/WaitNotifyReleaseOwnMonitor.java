@@ -11,7 +11,7 @@ public class WaitNotifyReleaseOwnMonitor {
     private static volatile Object resourceA = new Object();
     private static volatile Object resourceB = new Object();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread thread1 = new Thread(() -> {
             synchronized (resourceA) {
                 System.out.println("ThreadA got resourceA lock.");
@@ -44,5 +44,8 @@ public class WaitNotifyReleaseOwnMonitor {
         });
         thread1.start();
         thread2.start();
+        Thread.sleep(2000);
+        System.out.println("thread1's state is：" + thread1.getState());
+        System.out.println("thread2's state is：" + thread2.getState());
     }
 }
