@@ -19,7 +19,7 @@ public class WaitNotifyPrintOddEvenSyn {
     //用synchronized来通信
     public static void main(String[] args) {
         new Thread(() -> {
-            while (count < 100) {
+            while (count <= 100) {
                 synchronized (lock) {
                     //判断是否为偶数(用下面的位运算方式效率更高)
                     //1的二进制是00000001，除了最后一位是1其他都是0；
