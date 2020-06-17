@@ -37,6 +37,7 @@ public class MultiThreadsError implements Runnable {
 
     @Override
     public void run() {
+        //防止第一次运行就出现线程不安全
         marked[0] = true;
         for (int i = 0; i < 10000; i++) {
             //防止某个线程执行完mark[n]=true后直接又把index值修改了，导致另一个线程本来想对index=1进行处理，结果index的值直接被改成了2。
