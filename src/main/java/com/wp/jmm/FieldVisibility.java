@@ -8,7 +8,7 @@ package com.wp.jmm;
  */
 public class FieldVisibility {
     int a = 1;
-    int b = 2;
+    volatile int b = 2;
 
     private void change() {
         a = 3;
